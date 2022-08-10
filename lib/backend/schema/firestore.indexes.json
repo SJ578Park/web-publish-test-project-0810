@@ -1,0 +1,46 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "reply",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "reply_for",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reply_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "created_by",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "liked_by",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
