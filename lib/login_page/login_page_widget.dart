@@ -58,7 +58,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 50),
                     child: Text(
-                      '슬세권에서 닿는 입주민 커뮤니티 !!',
+                      '슬세권에서 닿는 입주민 커뮤니티 !!!',
                       style: FlutterFlowTheme.of(context).bodyText2,
                     ),
                   ),
